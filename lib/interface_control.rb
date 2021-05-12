@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # UIControl module describes useful imput control functions for interfaces
 module UIControl
   def choose(input)

@@ -1,7 +1,3 @@
-# frozen_string_literal: true
-
-# rubocop:disable Metrics/AbcSize
-
 require 'nokogiri'
 require 'open-uri'
 require_relative 'interface_control'
@@ -49,4 +45,3 @@ class Jack
         |PRESS 1 AND ENTER TO EXIT"
   end
 end
-# rubocop:enable Metrics/AbcSize

@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require 'nokogiri'
 require 'open-uri'
 # Importer module describes the import process for all scraped data
