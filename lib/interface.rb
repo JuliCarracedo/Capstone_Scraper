@@ -49,6 +49,6 @@ class Interface
             end
         end    
     end
-    
-
 end
+
+
