@@ -1,11 +1,12 @@
 # frozen_string_literal: true
+
 # UIControl module describes useful imput control functions for interfaces
 module UIControl
   def choose(input)
     return input if (1..4).include? input
 
     puts 'Please choose a number from 1 to 4'
-    -1
+    false
   end
 
   def exit(input)

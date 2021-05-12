@@ -1,7 +1,8 @@
 # frozen_string_literal: true
-# Importer module describes the import process for all scraped data
+
 require 'nokogiri'
 require 'open-uri'
+# Importer module describes the import process for all scraped data
 module Importer
   def get_titles(doc)
     doc.search('//h3').map(&:inner_text)
