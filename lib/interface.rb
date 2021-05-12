@@ -24,6 +24,7 @@ class Interface
   private
 
   def run_interface
+    puts @ui
     input = false
     classes = [Pewdiepie, Beast, Jack]
     while input != 0
