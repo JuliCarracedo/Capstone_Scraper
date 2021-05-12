@@ -3,18 +3,18 @@ require 'open-uri'
 require_relative 'interface_control.rb'
 require_relative 'imports_control.rb'
 
-class Pewdiepie
+class Jack
     include UIControl, Importer
     def initialize
 
-        @doc = Nokogiri::HTML(URI.open('https://www.reddit.com/r/PewdiepieSubmissions/top/')) do |config|
+        @doc = Nokogiri::HTML(URI.open('https://www.reddit.com/r/jacksepticeye/top/')) do |config|
             config.strict.nonet.recover
             end
         @titles = get_titles (@doc)
         @upvotes = get_upvotes (@doc)
         @times = get_times (@doc)
-        @ui ="        +-----------------------------------------------------------------------------------    
-        |     PEWDIEPIE TOP REDDIT POSTS                          
+        @ui ="        +-----------------------------------------------------------------------------------
+        |     JACKSEPTICEYE TOP REDDIT POSTS                          
         |1.#{@titles[0]}, posted #{@times[0]}. #{@upvotes[0]} upvotes
         |2.#{@titles[1]}, posted #{@times[1]}. #{@upvotes[1]} upvotes   
         |3.#{@titles[2]}, posted #{@times[2]}. #{@upvotes[2]} upvotes

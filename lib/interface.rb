@@ -1,4 +1,7 @@
 require_relative 'interface_control.rb'
+require_relative 'pewdiepie.rb'
+require_relative 'jacksepticeye.rb'
+require_relative 'mr_beast.rb'
 class Interface
     include UIControl
     def initialize
@@ -26,11 +29,20 @@ class Interface
             end
             case input
             when 1
-                puts "Option 1"
+                clear
+                running = Pewdiepie.new
+                running = nil
+                puts @ui
             when 2
-                puts "Option 2"
+                clear
+                running = Beast.new
+                running = nil
+                puts @ui
             when 3
-                puts "Option 3"
+                clear
+                running = Jack.new
+                running = nil
+                puts @ui
             when 4
                 puts "Goodbye"
                 return 0
@@ -40,5 +52,3 @@ class Interface
     
 
 end
-
-runtime = Interface.new
