@@ -3,7 +3,7 @@ require_relative 'pewdiepie'
 require_relative 'jacksepticeye'
 require_relative 'mr_beast'
 
-# This is the main menu for the program
+# This is the main menu for the application
 class Interface
   include UIControl
   def initialize
