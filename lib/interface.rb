@@ -6,6 +6,7 @@ require_relative 'mr_beast'
 # This is the main menu for the program
 class Interface
   include UIControl
+  attr_reader :ui
   def initialize
     @ui = "        +--------------------------------+
         | WELCOME TO REDDIT SNEAKY PEEKER|
@@ -22,7 +23,7 @@ class Interface
   private
 
   def run_interface
-    puts @ui
+    puts self.ui
     input = false
     classes = [Pewdiepie, Beast, Jack]
     while input != 0
@@ -31,7 +32,7 @@ class Interface
       input == 4 ? return : clear
 
       classes[input - 1].new
-      puts @ui
+      puts self.ui
     end
   end
 end

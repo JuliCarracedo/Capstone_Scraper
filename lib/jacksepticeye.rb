@@ -7,6 +7,7 @@ require_relative 'imports_control'
 class Jack
   include Importer
   include UIControl
+  attr_reader :ui
 
   def initialize
     @doc = Nokogiri::HTML(URI.open('https://www.reddit.com/r/jacksepticeye/top/')) do |config|
@@ -21,7 +22,7 @@ class Jack
 
   def run_interface
     clear
-    puts @ui
+    puts self.ui
     input = 0
     while input.zero?
       input = exit(gets.chomp.to_i)

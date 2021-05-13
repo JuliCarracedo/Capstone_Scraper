@@ -7,6 +7,7 @@ require_relative 'imports_control'
 class Pewdiepie
   include Importer
   include UIControl
+  attr_reader :ui
   def initialize
     @doc = Nokogiri::HTML(URI.open('https://www.reddit.com/r/PewdiepieSubmissions/top/')) do |config|
       config.strict.nonet.recover
@@ -20,7 +21,7 @@ class Pewdiepie
 
   def run_interface
     clear
-    puts @ui
+    puts self.ui
     input = 0
     while input.zero?
       input = exit(gets.chomp.to_i)
