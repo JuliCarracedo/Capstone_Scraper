@@ -26,6 +26,9 @@ To get a local copy up and running follow these simple example steps.
 - Run ```bin/script.rb´´´ in your console
 - Follow the instructions and choose the content you want to see
 
+Running RSpec
+- All dependencies are already installed. Just run ```rspec´´´
+
 If at any point you get an 504 or 502 error in console, don't panic. These errors come from the server during content refresh. Wait a minute and try again.
 
 ## Author
