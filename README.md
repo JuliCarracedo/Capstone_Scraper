@@ -20,9 +20,10 @@ It is designed to display the most upvoted posts for the day and show you their 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
 
-- Clone this repository
-- Cd to the root directory
-- Run ```.\bin\script.rb ´´´ in your console
+- Clone this repository: Copy the clone link from GitHub and on the git bash run ```git clone 'link'´´´
+- Run ```cd Capstone_Scraper´´´ in your console
+- Run ```bundle install´´´ in your console
+- Run ```bin/script.rb´´´ in your console
 - Follow the instructions and choose the content you want to see
 
 If at any point you get an 504 or 502 error in console, don't panic. These errors come from the server during content refresh. Wait a minute and try again.
