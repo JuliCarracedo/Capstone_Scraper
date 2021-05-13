@@ -9,6 +9,7 @@ class Beast
   include UIControl
 
   attr_reader :ui
+
   def initialize
     @doc = Nokogiri::HTML(URI.open('https://www.reddit.com/r/MrBeast/top/')) do |config|
       config.strict.nonet.recover
@@ -22,7 +23,7 @@ class Beast
 
   def run_interface
     clear
-    puts self.ui
+    puts ui
     input = 0
     while input.zero?
       input = exit(gets.chomp.to_i)

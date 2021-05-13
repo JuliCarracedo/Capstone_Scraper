@@ -7,4 +7,3 @@ gem 'ocra', '>= 1.0.0'
 gem 'open-uri'
 gem 'rspec', '5.0.1'
 gem 'rubocop', '>= 1.0.0'
-

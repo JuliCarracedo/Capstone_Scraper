@@ -22,7 +22,7 @@ class Jack
 
   def run_interface
     clear
-    puts self.ui
+    puts ui
     input = 0
     while input.zero?
       input = exit(gets.chomp.to_i)
